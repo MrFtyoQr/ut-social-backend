@@ -1,0 +1,10 @@
+Database Layer Documentation:
+
+1. app/db/mongodb.py:
+   - Contains MongoDB connection and collection setup
+   - client: Async MongoDB client for FastAPI
+   - db: Database instance
+   - sync_client: Sync MongoDB client for GridFS operations
+   - sync_db: Sync database instance
+   - fs: GridFS instance for file storage
+   - Collections: users_collection, posts_collection, comments_collection, reactions_collection

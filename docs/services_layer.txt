@@ -1,0 +1,29 @@
+Services Layer Documentation:
+
+1. app/services/user_service.py:
+   - Handles business logic for user-related operations
+   - get_user_by_email: Retrieves a user by email
+   - get_user_by_username: Retrieves a user by username
+   - get_user_by_id: Retrieves a user by ID
+   - create_user: Creates a new user with validation
+   - authenticate_user: Authenticates a user with email and password
+   - update_profile_picture: Updates a user's profile picture
+
+2. app/services/post_service.py:
+   - Handles business logic for post-related operations
+   - create_post: Creates a new post with file attachments
+   - get_posts: Retrieves posts with optional career filtering
+   - get_post_by_id: Retrieves a post by ID
+   - get_posts_by_user_id: Retrieves posts by a specific user
+   - delete_post: Deletes a post and its attachments
+
+3. app/services/interaction_service.py:
+   - Handles business logic for comments and reactions
+   - create_comment: Creates a new comment
+   - get_comments_by_post_id: Retrieves comments for a post
+   - delete_comment: Deletes a comment
+   - create_or_update_reaction: Creates or updates a reaction
+   - delete_reaction: Deletes a reaction
+   - get_reactions_by_post_id: Retrieves reactions for a post
+   - get_reaction_counts_by_post_id: Retrieves reaction counts by type for a post
+   

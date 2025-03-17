@@ -1,0 +1,23 @@
+Models Layer Documentation:
+
+1. app/models/user.py:
+   - Contains data models for user-related operations
+   - UserBase: Base model with common user fields (email, username)
+   - UserCreate: Model for user registration (includes password)
+   - UserInDB: Model for user data stored in the database (includes hashed_password)
+   - User: Model for user data returned to clients (excludes sensitive information)
+   - PyObjectId: Helper class for MongoDB ObjectId serialization/deserialization
+
+2. app/models/post.py:
+   - Contains data models for post-related operations
+   - FileAttachment: Model for file attachments stored in GridFS
+   - PostBase: Base model with common post fields (content, career)
+   - PostCreate: Model for post creation
+   - PostInDB: Model for post data stored in the database
+   - Post: Model for post data returned to clients (includes user information)
+
+3. app/models/interaction.py:
+   - Contains data models for comments and reactions
+   - CommentBase, CommentCreate, CommentInDB, Comment: Models for comment operations
+   - ReactionType: Enum for different reaction types (like, love, etc.)
+   - ReactionBase, ReactionCreate, ReactionInDB, Reaction: Models for reaction operations

@@ -1,0 +1,12 @@
+Core Layer Documentation:
+
+1. app/core/config.py:
+   - Contains application configuration
+   - Settings: Pydantic model for application settings
+   - Loads environment variables with defaults
+
+2. app/core/security.py:
+   - Contains security-related utilities
+   - create_access_token: Creates a JWT token for authentication
+   - verify_password: Verifies a password against a hash
+   - get_password_hash: Generates a password hash
